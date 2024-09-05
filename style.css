@@ -1,0 +1,109 @@
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    background-color: rgb(121, 121, 131);
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sub-container{
+    background-color: lightgrey;
+    width: 60vw;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+}
+
+.wrapper{
+    
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.slider{
+    width: 80%;
+    height: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.slide{
+  
+    width: 100%;
+    height: 100%;
+    transform: translateX(0);
+    transition: transfer 0.5s ease;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.btn{
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+.radbtn{
+    background-color: white;
+    font-size: 20px;
+    width: 10px; 
+    height: 10px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    accent-color: black;
+    margin-right: 5px;
+}
+
+
+.active{
+    background-color: black;
+    
+}
+
+@media screen and (max-width: 800px) {
+    .slider{
+        width: 90%;
+        height: 70%;
+    }
+
+    
+}
+
+@media screen and (max-width:600px){
+    .sub-container{
+        width: 95%;
+        height: 60%;
+    }
+    .slider{
+        width: 100%;
+        height: 90%;
+    }
+    
+}
+
